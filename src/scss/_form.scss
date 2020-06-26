@@ -1,55 +1,62 @@
-//====================================================================================================
-.popup {
-   background: rgba(80, 84, 87, 0.49);
-   box-shadow: 19px 19px 61px #030915, -20px -18px 66px rgba(186, 247, 114, 0.24);
-   border-radius: 15px;
-   // .form__inner
-   .fancybox-button {
-      top: 10px;
-      right: 10px;
-      background: url("../images/icon/close.svg") 0 0 no-repeat;
-      svg {
-         display: none;
-      }
+.form {
+   max-width: 1060px;
+   min-height: 850px;
+   background-position: right center;
+   position: relative;
+   @media (max-width: $md1+px) {
+      max-width: 100%;
    }
 
    &__inner {
       display: flex;
       flex-direction: column;
+      margin-left: auto;
+      position: absolute;
+      top: 185px;
+      right: -123px;
       max-width: 456px;
       width: 100%;
+      background: #ffffff;
+      box-shadow: 19px 19px 61px #030915, -20px -18px 66px rgba(186, 247, 114, 0.24);
+      border-radius: 15px;
       padding: 74px 42px 85px 42px;
+
+      @media (max-width: 1200px) {
+         left: 50%;
+         transform: translate(-50%);
+      }
+
+      @media (max-width: 568px) {
+         position: relative;
+         margin-right: auto;
+         left: 0;
+         transform: translate(0);
+         padding: 74px 0px 85px;
+      }
    }
 
-   // .form__title
-
    &__title {
-      max-width: 364px;
-      margin: 0 auto;
       font-family: "Raleway";
       font-weight: 600;
       font-size: 24px;
       line-height: 28px;
       text-align: center;
       margin: 0px 0px 66px 0px;
-      color: #baf772;
+      color: #323b40;
    }
-
-   // .form__box
 
    &__box {
       padding: 0px 55px 0px 54px;
+      @media (max-width: 568px) {
+         padding: 0px 20px;
+      }
    }
-
-   // .form__input
 
    &__input {
       display: block;
       width: 100%;
-      border-bottom: 1px solid #baf772;
-      color: #baf772;
+      border-bottom: 1px solid #505457;
       padding: 0px 0px 6px 10px;
-      background-color: transparent;
       & + & {
          margin-top: 61px;
       }
@@ -59,22 +66,18 @@
       }
    }
 
-   // .form__btn
-
    &__btn {
       display: block;
       margin: 35px 0px 34px 2px;
       max-width: 260px;
       width: 100%;
       padding: 20px 0px 20px 0px;
-      background: #baf772;
+      background: #ff0000;
       border-radius: 45px;
       font-weight: 700;
       font-size: 18px;
-      color: #000;
+      color: #ffffff;
    }
-
-   // .form__text
 
    &__text {
       position: relative;
@@ -84,21 +87,17 @@
       cursor: pointer;
    }
 
-   // .form__checkbox
-
    &__checkbox {
       appearance: none;
       &:checked,
       &:focus {
-         & + .popup__castom {
+         & + .form__castom {
             width: 15px;
             height: 15px;
-            background-color: #baf772;
+            background-color: #ff0000;
          }
       }
    }
-
-   // .form__castom
 
    &__castom {
       position: absolute;
@@ -109,5 +108,3 @@
       border: 1px solid #c4c4c4;
    }
 }
-
-//====================================================================================================
