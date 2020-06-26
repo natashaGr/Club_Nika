@@ -1,0 +1,117 @@
+.specification {
+   padding: 155px 0px 148px 0px;
+   position: relative;
+   max-width: 947px;
+   width: 100%;
+   margin: 0 auto;
+   &:after {
+      content: "";
+      position: absolute;
+      bottom: -66px;
+      left: -40px;
+      max-width: 278px;
+      width: 100%;
+      min-height: 245px;
+      background: url("../images/bg-icon/bg-icon-4.png") 0 0 no-repeat;
+      @media (max-width: 815px) {
+         content: none;
+      }
+   }
+
+   &__title {
+      margin: 0px 0px 90px 0px;
+   }
+
+   &__descr {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-top: 7px;
+      @media (max-width: 721px) {
+         justify-content: center;
+      }
+   }
+
+   &__descr-text {
+      max-width: 363px;
+      width: 50%;
+      font-size: 18px;
+      line-height: calc(23 / 18);
+      color: #ffffff;
+      @media (max-width: 721px) {
+         width: 100%;
+         margin-bottom: 20px;
+      }
+   }
+}
+
+.specification {
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      margin-right: 10px;
+      &:after {
+         content: "";
+         position: absolute;
+         bottom: -33px;
+         left: -50px;
+         max-width: 172px;
+         width: 100%;
+         min-height: 191px;
+         background: url("../images/bg-icon/bg-icon-3.png") 0 0 no-repeat;
+         @media (max-width: 815px) {
+            content: none;
+         }
+      }
+   }
+}
+.col-card {
+   // .col-card__link
+   max-width: 356px;
+   width: 100%;
+   margin: 0px 0px 90px 0px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   &__link {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(132.05deg, rgba(186, 247, 114, 0.52) 4.51%, rgba(97, 111, 119, 0.34) 93.91%);
+      box-shadow: -15px -15px 36px rgba(186, 247, 114, 0.27), 14px 14px 32px rgba(64, 1, 20, 0.35);
+      &--position {
+         margin-bottom: 50px;
+      }
+   }
+
+   // .col-card__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 24px;
+      color: #fffefe;
+      margin: 0px 0px 28px 0px;
+   }
+
+   &__descr {
+      flex: 1 1 auto;
+      margin: 0 auto;
+      max-width: 356px;
+      width: 100%;
+      font-size: 18px;
+      line-height: calc(23 / 18);
+      color: #fffefe;
+   }
+
+   @media (max-width: 721px) {
+      max-width: 100%;
+   }
+}
