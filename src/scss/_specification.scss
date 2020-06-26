@@ -7,11 +7,11 @@
    &:after {
       content: "";
       position: absolute;
-      bottom: -66px;
-      left: -40px;
+      bottom: -90px;
+      left: -283px;
       max-width: 278px;
       width: 100%;
-      min-height: 245px;
+      min-height: 267px;
       background: url("../images/bg-icon/bg-icon-4.png") 0 0 no-repeat;
       @media (max-width: 815px) {
          content: none;
@@ -52,12 +52,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
       position: relative;
-      margin-right: 10px;
+      margin-left: -10px;
       &:after {
          content: "";
          position: absolute;
          bottom: -33px;
-         left: -50px;
+         left: -161px;
          max-width: 172px;
          width: 100%;
          min-height: 191px;
