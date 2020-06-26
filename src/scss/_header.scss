@@ -33,7 +33,7 @@
          order: 2;
          margin-right: 0;
       }
-      @media (max-width: $md3+px) {
+      @media (max-width: $md4+px) {
          order: 1;
          flex: 0 0 0;
          img {
@@ -54,7 +54,7 @@
       @media (max-width: 940px) {
          order: 1;
       }
-      @media (max-width: $md3+px) {
+      @media (max-width: $md4+px) {
          flex: 1 1 auto;
          text-align: center;
       }
@@ -102,6 +102,7 @@
       }
       @media (max-width: 940px) {
          position: fixed;
+         z-index: 5;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -130,7 +131,7 @@
             bottom: 0;
             left: 50%;
             background: url("../images/bg-icon/icon-menu-1.svg") 0 0 no-repeat;
-            @media (max-width: $md3+px) {
+            @media (max-width: $md4+px) {
                left: 40%;
             }
          }
@@ -161,7 +162,7 @@
    transform: rotate(0deg);
    transition: 0.5s ease-in-out;
    cursor: pointer;
-   z-index: 5;
+   z-index: 6;
 
    span {
       @include anim(0.3s, 0s);

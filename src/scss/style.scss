@@ -37,7 +37,8 @@ body {
    color: #000;
    font-family: "PTSans";
    font-size: 14px;
-   background: linear-gradient(125.45deg, #515558 26.54%, #010713 95.91%);
+   background-color: #515558;
+
    &.lock {
       overflow: hidden;
    }
@@ -85,8 +86,8 @@ body {
 //@import "baguetteBox.scss";
 //@import "pagging.scss";
 //@import "icons.scss";
-@import "popup.scss";
 @import "header.scss";
+@import "main.scss";
 @import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
