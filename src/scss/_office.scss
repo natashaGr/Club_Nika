@@ -1,0 +1,59 @@
+.office {
+   padding: 179px 0px 0px 0px;
+   background-color: #eeeae7;
+   min-height: 902px;
+   display: flex;
+   justify-content: flex-start;
+   background-image: url(../images/bg-icon/bg-adress.png);
+   background-repeat: no-repeat;
+   background-size: 940px;
+   background-position: 81% 88px;
+}
+
+.office-card {
+   max-width: 457px;
+   margin-left: -166px;
+   padding: 85px 37px 85px 37px;
+   background: #ffffff;
+   box-shadow: 19px 19px 34px rgba(3, 9, 21, 0.3), -20px -18px 66px rgba(186, 247, 114, 0.24);
+   border-radius: 16px;
+
+   &__title {
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto 27px;
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      letter-spacing: 0.06em;
+      color: #515558;
+   }
+
+   &__text {
+      max-width: 382px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 78px;
+      font-family: PT Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: calc(23 / 18);
+      color: #323b40;
+   }
+
+   &__address {
+      flex: 1 1 356px;
+      max-width: 356px;
+      margin: 0 auto;
+      text-align: center;
+      font-style: normal;
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      letter-spacing: 0.06em;
+      color: #252c30;
+   }
+}

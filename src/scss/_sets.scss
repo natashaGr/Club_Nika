@@ -22,6 +22,9 @@
       margin: 0px 31px 25px 0;
       background: linear-gradient(141.66deg, #505457 0%, #030915 100%), #fff8f8;
       border-radius: 10px;
+      @media (max-width: 790px) {
+         margin-right: 21px;
+      }
    }
 }
 
