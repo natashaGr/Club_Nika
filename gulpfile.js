@@ -99,6 +99,7 @@ gulp.task("style", function () {
 			//указываем, где брать исходники
 			"node_modules/normalize.css/normalize.css",
 			'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+			'node_modules/slick-carousel/slick/slick.css',
 		])
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
 		.pipe(cssmin()) //минифицируем полученный файл
@@ -112,6 +113,7 @@ gulp.task("script", function () {
 		.src([
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
 			"node_modules/jquery/dist/jquery.js",
+			'node_modules/slick-carousel/slick/slick.js',
 			'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
 		])
 		.pipe(size())
@@ -330,7 +332,7 @@ gulp.task("browser-sync", function () {
 		browser: [""], //в каком браузере
 		//tunnel: " ", //тут можно прописать название проекта и дать доступ к нему через интернет. Работает нестабильно, запускается через раз. Не рекомендуется включать без необходимости.
 		//tunnel:true, //работает, как и предыдущяя опция, но присваивает рандомное имя. Тоже запускается через раз и поэтому не рекомендуется для включения
-		host: "192.168.0.104", //IP сервера в локальной сети. Отключите, если у вас DHCP, пропишите под себя, если фиксированный IP в локалке.
+		// host: "192.168.0.104", //IP сервера в локальной сети. Отключите, если у вас DHCP, пропишите под себя, если фиксированный IP в локалке.
 	});
 });
 

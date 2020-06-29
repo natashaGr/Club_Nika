@@ -1,0 +1,184 @@
+.reviews {
+   padding: 40px 0px 40px 0px;
+
+   &__title {
+      margin: 0px 0px 88px 0px;
+   }
+
+   &__inner {
+      max-width: 931px;
+      width: 100%;
+      margin: 0 auto 90px;
+      display: flex;
+      justify-content: space-around;
+   }
+}
+.col-reviews {
+   max-width: 200px;
+   text-align: center;
+
+   &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: calc(31 / 24);
+      color: #ffffff;
+      margin: 0px 0px 25px 0px;
+   }
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(132.05deg, rgba(186, 247, 114, 0.51) 4.51%, rgba(97, 111, 119, 0.34) 93.91%);
+      box-shadow: -15px -15px 36px rgba(186, 247, 114, 0.27), 14px 14px 32px rgba(64, 1, 20, 0.35);
+   }
+}
+
+.slider-reviews {
+   &__inner {
+      max-width: 931px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__box {
+      padding: 50px 0px 50px 50px;
+      @media (max-width: 776px) {
+         padding-left: 23px;
+         padding-right: 23px;
+      }
+   }
+
+   &__avatar {
+      display: flex;
+   }
+
+   &__link {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      width: 250px;
+      min-height: 250px;
+      background: linear-gradient(132.05deg, rgba(186, 247, 114, 0.69) 4.51%, rgba(97, 111, 119, 0.34) 93.91%);
+      box-shadow: -15px -15px 36px rgba(186, 247, 114, 0.27), 14px 14px 32px rgba(64, 1, 20, 0.35);
+      img {
+         flex: 1 1 178px;
+         max-width: 178px;
+         width: 100%;
+         min-height: 178px;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+      @media (max-width: 540px) {
+         max-width: 160px;
+         min-height: 160px;
+         img {
+            max-width: 115px;
+            min-height: 115px;
+         }
+      }
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      padding: 0px 0px 15px 0px;
+      position: relative;
+      margin: 50px 0px 0px 18px;
+      @media (max-width: 540px) {
+         font-size: 15px;
+      }
+      &:after {
+         content: "";
+         position: absolute;
+         top: 30px;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background: linear-gradient(90deg, #baf772 0%, rgba(186, 247, 114, 0) 105.45%);
+      }
+   }
+
+   &__coment {
+      position: relative;
+      left: 180px;
+      top: -60px;
+      max-width: 525px;
+      background: #ffffff;
+      box-shadow: 19px 19px 61px #030915, -20px -18px 66px rgba(186, 247, 114, 0.24);
+      border-radius: 21px;
+      font-size: 18px;
+      line-height: calc(23 / 18);
+      color: #000000;
+      padding: 46px 57px 86px 57px;
+      @media (max-width: $md3+px) {
+         top: -30px;
+         left: 0;
+         padding: 46px 18px 54px;
+      }
+   }
+
+   &__pagination {
+      max-width: 931px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      top: -80px;
+      right: 70px;
+      @media (max-width: $md3+px) {
+         top: -40px;
+         right: 0;
+         justify-content: center;
+      }
+   }
+
+   .slick-arrow {
+      background-color: transparent;
+      font-size: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url(../images/icon/arrow-prev.png);
+      &.slick-prev {
+         order: 1;
+         transform: rotate(180deg);
+         margin-left: 15px;
+      }
+      &.slick-next {
+         margin-right: 15px;
+      }
+   }
+   .slick-dots {
+      display: flex;
+
+      li {
+         button {
+            font-size: 0;
+            background-color: transparent;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0px 6px 0px 6px;
+            border: 1px solid #047524;
+         }
+         &.slick-active {
+            button {
+               border: none;
+               background: linear-gradient(132.05deg, rgba(186, 247, 114, 0.69) 4.51%, rgba(97, 111, 119, 0.34) 93.91%);
+               box-shadow: -15px -15px 36px rgba(186, 247, 114, 0.27), 14px 14px 32px rgba(64, 1, 20, 0.35);
+               transform: matrix(1, 0, 0, -1, 0, 0);
+            }
+         }
+      }
+   }
+}
